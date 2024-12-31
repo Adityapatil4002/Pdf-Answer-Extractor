@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Expert System</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>PDF Expert System</h1>
+
+    <div id="upload-section">
+        <h2>Upload a PDF</h2>
+        <form id="pdf-upload-form" enctype="multipart/form-data">
+            <input type="file" name="pdf" accept="application/pdf">
+            <button type="submit">Upload PDF</button>
+        </form>
+        <p id="upload-message"></p>
+    </div>
+
+    <div id="qa-section" style="display: none;">
+        <h2>Ask a Question</h2>
+        <form id="ask-question-form">
+            <input type="text" name="question" placeholder="Type your question">
+            <button type="submit">Ask</button>
+        </form>
+        <p id="answer"></p>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
